@@ -8,19 +8,18 @@
 <body>
 <div id="container">
     <a href="/">SocialED</a> | <a href="profile">Perfil</a> | <a href="login">Salir {{nickname}}</a>
-    <h1>Hola internauta, Qué tal estás?</h1>
-    <h2>{{ nickname}}</h2>
+    <h1>Bienvenid@ al menú principal {{nickname}}</h1>
     <div>
         <div id="left">
             <form action="home" method="post" name="envio">
-                <label for="message">Escribe algo...</label>
+                <label for="message">Realiza una búsqueda</label>
                 <div class="inputs">
                     {% for message in messages %}
                     <li> {{ message[1] }}</li>
                     {% endfor %}
                 </div>
                 <input id="message" name="message" required="true"
-                       placeholder="Aquí tus bellas palabras..." maxlength="128" size="80"
+                       placeholder="Introduce un término para realizar una búsqueda..." maxlength="128" size="80"
                        type="text" value=""/>
                 <input id="last" name="last" type="hidden" value=""/>
         </div>
@@ -32,7 +31,7 @@
     <div id="right">
         <form>
             <label for="post">
-                Cosas de tus amistades...:
+                Búsquedas recientes de tus amigos:
             </label>
             <div class="inputs">
                 {% for message in friends_messages %}

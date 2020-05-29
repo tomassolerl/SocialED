@@ -11,12 +11,12 @@
 <h1>
     Error
 </h1>
-Lamentablemente ha ocurrido el siguiente error:
----> {{ error_message }} <---
+<h3>No se ha podido realizar la siguiente acción...</h3>
+Motivo: {{ error_message }}
 <div>
     <form action="{{ next }}" method="get">
         <div class="inputs">
-            <input id="next" name="next" type="submit" value="Continue"/>
+            <input id="next" name="next" type="submit" value="Continuar"/>
         </div>
     </form>
 </div>
