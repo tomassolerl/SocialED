@@ -35,3 +35,15 @@ h1 {
    font-size:20pt;
 }
 
+#left {
+  width:48%;
+  display: inline-block;
+}
+
+#right {
+  width: 48%;
+  float: right;
+  display: inline-block;
+  height: 100%;
+}
+
